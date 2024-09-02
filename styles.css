@@ -18,6 +18,7 @@ img{
 html, body {
     margin: 0;
     height: 100%;
+    font-family: Continental;
 }
 .image-container {
     position: relative;
@@ -39,4 +40,23 @@ img {
 }
 #image2 {
     z-index: 0;
+}
+
+#centerdiv{
+    z-index: 2;
+}
+
+.bottom-center-div {
+    position: absolute;
+    bottom: 20px; /* Distance from the bottom of the page */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Continental;
+    src: url("ContinentalMedium.otf") format("opentype");
 }

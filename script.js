@@ -31,6 +31,19 @@ function displayRandomImage(){
 
 } */
 
+const img_list = [
+    {name:"1.jpg", text:"un test de text", fonctcolor: "white"},
+    {name:"2.jpg", text:"un test de cerise", fonctcolor: "white"},
+    {name:"3.jpg", text:"un test de pomme", fonctcolor: "white"},
+    {name:"4.jpg", text:"un test de mangue", fonctcolor: "white"},
+    {name:"5.jpg", text:"un test de poire", fonctcolor: "white"},
+    {name:"6.jpg", text:"un test de tomate", fonctcolor: "white"},
+    {name:"7.jpg", text:"un test de poireau", fonctcolor: "white"}
+ ]
+
+
+let div = document.querySelector(".bottom-center-div")
+
     let image1 = document.getElementById('image1');
         let image2 = document.getElementById('image2');
         let currentImage = 1;
@@ -61,4 +74,5 @@ function displayRandomImage(){
                 oldImage.style.opacity = 0; // Fade out old image
                 currentImage = currentImage === 1 ? 2 : 1; // Swap current image reference
             };
+            div.innerHTML = img_list[random-1].text
         }
