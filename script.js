@@ -93,39 +93,46 @@ const img_list = [
     {name: "88.jpg", text: "un test de item 88", fonctcolor: "white"},
  ]
 
+ img_list.forEach(element => {
+    element.text = ''
+    
+ });
 
-
+// Div pour le texte
 let div = document.querySelector(".bottom-center-div")
 
-    let image1 = document.getElementById('image1');
-        let image2 = document.getElementById('image2');
-        let currentImage = 1;
-        let random = 1;
+// Images
+let image1 = document.getElementById('image1');
+let image2 = document.getElementById('image2');
+let currentImage = 1;
+let random = 1;
 
-        displayRandomImage();
+// Appel pour avoir une image au lancement
+displayRandomImage();
 
-        document.querySelector('.image-container').addEventListener('click', () => {
-            displayRandomImage();
-        });
+document.querySelector('.image-container').addEventListener('click', () => {
+    displayRandomImage();
+});
 
-        function displayRandomImage() {
-            let random2 = Math.floor(Math.random() * img_list.length) + 1;
+// Fonction pour fondu et changement d'image
+function displayRandomImage() {
+    let random2 = Math.floor(Math.random() * img_list.length) + 1;
 
-            while (random2 == random) {
-                random2 = Math.floor(Math.random() * img_list.length) + 1;
-            }
+    while (random2 == random) {
+        random2 = Math.floor(Math.random() * img_list.length) + 1;
+    }
 
-            random = random2;
+    random = random2;
 
-            let newImage = currentImage === 1 ? image2 : image1;
-            let oldImage = currentImage === 1 ? image1 : image2;
+    let newImage = currentImage === 1 ? image2 : image1;
+    let oldImage = currentImage === 1 ? image1 : image2;
 
-            newImage.src = `./img/${random}.jpg`;
+    newImage.src = `./img/${random}.jpg`;
 
-            newImage.onload = () => {
-                newImage.style.opacity = 1; // Fade in new image
-                oldImage.style.opacity = 0; // Fade out old image
-                currentImage = currentImage === 1 ? 2 : 1; // Swap current image reference
-            };
-            div.innerHTML = img_list[random-1].text
-        }
+    newImage.onload = () => {
+        newImage.style.opacity = 1; // Fade in new image
+        oldImage.style.opacity = 0; // Fade out old image
+        currentImage = currentImage === 1 ? 2 : 1; // Swap current image reference
+    };
+    div.innerHTML = img_list[random-1].text
+}
