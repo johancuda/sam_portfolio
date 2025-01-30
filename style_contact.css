@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Continental;
+}
+
+div{
+    margin: 20px;
+    font-size: 17px;
+}
+
+a{
+    color: black;
+}
+
+@font-face {
+    font-family: Continental;
+    src: url("font/ContinentalMedium.otf") format("opentype");
+}
