@@ -15,5 +15,5 @@ a{
 
 @font-face {
     font-family: Continental;
-    src: url("font/ContinentalMedium.otf") format("opentype");
+    src: url("../font/ContinentalMedium.otf") format("opentype");
 }

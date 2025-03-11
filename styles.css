@@ -4,7 +4,9 @@ html, body {
     height: 100%;
     font-family: Continental;
     font-size: 24px;
+    cursor: url('./cursor/cursor_white.png') 10 10, auto !important;
 }
+
 .image-container {
     position: relative;
     width: 100%;

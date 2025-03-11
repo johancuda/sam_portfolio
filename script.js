@@ -1,4 +1,9 @@
 
+
+
+
+
+
 // Ici tu rajoutes une ligne par image pour définir le texte :
 // par ex: {name:"numéroImage.jpg", text:"le texte de l'image", fontcolor:"couleur du texte"},
 // ne pas oublier la virgule à la fin!
@@ -136,3 +141,4 @@ function displayRandomImage() {
     };
     div.innerHTML = img_list[random-1].text
 }
+
