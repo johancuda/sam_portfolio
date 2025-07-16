@@ -113,6 +113,7 @@ const img_list = [
     {name: "103.jpg", text: "un test de figue", fonctcolor: "white"},
     {name: "104.jpg", text: "un test de figue", fonctcolor: "white"},
     {name: "105.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "106.jpg", text: "un test de figue", fonctcolor: "white"},
  ]
 
  img_list.forEach(element => {
