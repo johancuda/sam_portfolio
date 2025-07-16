@@ -96,6 +96,23 @@ const img_list = [
     {name: "86.jpg", text: "un test de item 86", fonctcolor: "white"},
     {name: "87.jpg", text: "un test de item 87", fonctcolor: "white"},
     {name: "88.jpg", text: "un test de item 88", fonctcolor: "white"},
+    {name: "89.jpg", text: "un test de text", fonctcolor: "white"},
+    {name: "90.jpg", text: "un test de cerise", fonctcolor: "white"},
+    {name: "91.jpg", text: "un test de pomme", fonctcolor: "white"},
+    {name: "92.jpg", text: "un test de mangue", fonctcolor: "white"},
+    {name: "93.jpg", text: "un test de poire", fonctcolor: "white"},
+    {name: "94.jpg", text: "un test de tomate", fonctcolor: "white"},
+    {name: "95.jpg", text: "un test de poireau", fonctcolor: "white"},
+    {name: "96.jpg", text: "un test de fraise", fonctcolor: "white"},
+    {name: "97.jpg", text: "un test de banane", fonctcolor: "white"},
+    {name: "98.jpg", text: "un test de pêche", fonctcolor: "white"},
+    {name: "99.jpg", text: "un test de raisin", fonctcolor: "white"},
+    {name: "100.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "101.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "102.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "103.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "104.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "105.jpg", text: "un test de figue", fonctcolor: "white"},
  ]
 
  img_list.forEach(element => {
