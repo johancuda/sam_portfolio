@@ -114,6 +114,10 @@ const img_list = [
     {name: "104.jpg", text: "un test de figue", fonctcolor: "white"},
     {name: "105.jpg", text: "un test de figue", fonctcolor: "white"},
     {name: "106.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "107.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "108.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "109.jpg", text: "un test de figue", fonctcolor: "white"},
+    {name: "110.jpg", text: "un test de figue", fonctcolor: "white"},
  ]
 
  img_list.forEach(element => {
@@ -128,10 +132,10 @@ let div = document.querySelector(".bottom-center-div")
 let image1 = document.getElementById('image1');
 let image2 = document.getElementById('image2');
 let currentImage = 1;
-let random = 1;
+let random = 107;
 
 // Appel pour avoir une image au lancement
-displayRandomImage();
+displayFirstImage();
 
 document.querySelector('.image-container').addEventListener('click', () => {
     displayRandomImage();
@@ -146,6 +150,26 @@ function displayRandomImage() {
     }
 
     random = random2;
+
+    let newImage = currentImage === 1 ? image2 : image1;
+    let oldImage = currentImage === 1 ? image1 : image2;
+
+    newImage.src = `./img/${random}.jpg`;
+
+    newImage.onload = () => {
+        newImage.style.opacity = 1; // Fade in new image
+        oldImage.style.opacity = 0; // Fade out old image
+        currentImage = currentImage === 1 ? 2 : 1; // Swap current image reference
+    };
+    div.innerHTML = img_list[random-1].text
+}
+
+function displayFirstImage() {
+    let random2 = Math.floor(Math.random() * img_list.length) + 1;
+
+    while (random2 == random) {
+        random2 = Math.floor(Math.random() * img_list.length) + 1;
+    }
 
     let newImage = currentImage === 1 ? image2 : image1;
     let oldImage = currentImage === 1 ? image1 : image2;
